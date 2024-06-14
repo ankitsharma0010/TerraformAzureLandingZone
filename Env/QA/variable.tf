@@ -10,3 +10,9 @@ variable "Subnet" {
 variable "KeyVault" {
 
 }
+variable "VM" {
+
+}
+variable "BastionHost" {
+
+}

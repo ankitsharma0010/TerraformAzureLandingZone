@@ -17,3 +17,13 @@ module "KeyVault" {
   KeyVault   = var.KeyVault
   depends_on = [module.Subnet]
 }
+module "VM" {
+  source     = "../../VM"
+  VM         = var.VM
+  depends_on = [module.KeyVault]
+}
+module "BastionHost" {
+  source      = "../../Bastion"
+  BastionHost = var.BastionHost
+  depends_on  = [module.VM]
+}

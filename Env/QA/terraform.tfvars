@@ -33,3 +33,20 @@ KeyVault = {
     resource_group_name = "AnkuRG"
   }
 }
+VM = {
+  VM1 = {
+    nic_name            = "AnkuNic"
+    location            = "canadaeast"
+    resource_group_name = "AnkuRG"
+    vm_name             = "AnkuVM"
+    vm_size             = "Standard_F2"
+  }
+}
+BastionHost = {
+  Bastion = {
+    publicipname        = "AnkuPublicIP"
+    location            = "canadaeast"
+    resource_group_name = "AnkuRG"
+    BastionName         = "AnkuBastion"
+  }
+}
